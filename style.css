@@ -97,3 +97,100 @@
   position: absolute;
   object-fit: cover;
 }
+/* Original CSS code should be injected here */
+
+/* Additional semantic and accessibility improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.profile-section {
+  position: relative;
+  display: contents;
+}
+
+.profile-content {
+  position: relative;
+  display: contents;
+}
+
+.profile-details {
+  display: contents;
+}
+
+.profile-details dt {
+  display: inline;
+  font-weight: inherit;
+}
+
+.profile-details dd {
+  display: inline;
+  margin: 0;
+}
+
+.profile-details dt::after {
+  content: " ";
+}
+
+.profile-details dd::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.profile-details dd:last-child::after {
+  content: "";
+}
+
+/* Button improvements for accessibility */
+.desktop .pikpng-com-white,
+.desktop .image-2 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.desktop .pikpng-com-white img,
+.desktop .image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desktop .pikpng-com-white:focus,
+.desktop .image-2:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.desktop .pikpng-com-white:hover,
+.desktop .image-2:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+/* Maintain original positioning for buttons */
+.desktop .pikpng-com-white {
+  position: absolute;
+  width: 67px;
+  height: 64px;
+  top: 4px;
+  left: 62px;
+}
+
+.desktop .image-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 11px;
+  left: 1443px;
+}
