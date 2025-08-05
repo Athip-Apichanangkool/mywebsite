@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <title>Student Profile - นายอธิป อภิชนังกูร</title>
+    <meta name="description" content="Student profile page showcasing personal information and interests" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="desktop">
+    <main class="desktop">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
-          <img class="image" src="img/image-8.png" />
-          <div class="rectangle"></div>
-          <img class="CU-film-student" src="img/CU-film-student-1.png" />
-          <p class="element">
-            ชื่อ-นามสกุล : นายอธิป อภิชนังกูร<br />สถานศึกษา : โรงเรียนสวนกุหลาบวิทยาลัย นนทบุร<br />คำคม :
-            โชคร้ายยังคงมี แต่โชคดียังมีกว่า<br />แนะนำตัว : สวัสดีครับ ผมชื่อ เอ็ม อายุ 17 ปีเข้าโรงเรียนส.ก.น.
-            มาตอนม.ปลายครับ<br />สิ่งที่สนใจ : งานวิดีโอ ภาพยนตร์ ดนตรี
-          </p>
-          <img class="img" src="img/image.png" />
-          <img class="pikpng-com-white" src="img/pikpng-com-white-bars-png-4251166-1.png" />
-          <div class="div"></div>
-          <img class="image-2" src="img/image-9.png" />
+          <img class="image" src="img/image-8.png" alt="Background image" />
+          <header class="rectangle" role="banner">
+            <button class="pikpng-com-white" type="button" aria-label="Menu" aria-expanded="false">
+              <img src="img/pikpng-com-white-bars-png-4251166-1.png" alt="" />
+            </button>
+            <button class="image-2" type="button" aria-label="Home">
+              <img src="img/image-9.png" alt="" />
+            </button>
+          </header>
+          <section class="profile-section">
+            <img class="CU-film-student" src="img/CU-film-student-1.png" alt="Student portrait photo" />
+            <div class="profile-content">
+              <img class="img" src="img/image.png" alt="Profile header decoration" />
+              <div class="element" role="region" aria-labelledby="profile-info">
+                <h1 id="profile-info" class="sr-only">Student Profile Information</h1>
+                <dl class="profile-details">
+                  <dt>ชื่อ-นามสกุล :</dt>
+                  <dd>นายอธิป อภิชนังกูร</dd>
+                  <dt>สถานศึกษา :</dt>
+                  <dd>โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี</dd>
+                  <dt>คำคม :</dt>
+                  <dd>โชคร้ายยังคงมี แต่โชคดียังมีกว่า</dd>
+                  <dt>แนะนำตัว :</dt>
+                  <dd>สวัสดีครับ ผมชื่อ เอ็ม อายุ 17 ปีเข้าโรงเรียนส.ก.น. มาตอนม.ปลายครับ</dd>
+                  <dt>สิ่งที่สนใจ :</dt>
+                  <dd>งานวิดีโอ ภาพยนตร์ ดนตรี</dd>
+                </dl>
+              </div>
+            </div>
+          </section>
+          <footer class="div" role="contentinfo"></footer>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
