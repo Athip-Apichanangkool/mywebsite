@@ -4,8 +4,6 @@
   justify-items: center;
   align-items: start;
   width: 100vw;
-  min-height: 100vh;
-  height: 100%;
 }
 
 .desktop .overlap-group-wrapper {
@@ -27,6 +25,7 @@
   height: 1021px;
   top: 3px;
   left: 0;
+  aspect-ratio: 1.5;
   position: absolute;
   object-fit: cover;
 }
@@ -46,6 +45,7 @@
   height: 519px;
   top: 214px;
   left: 132px;
+  aspect-ratio: 0.71;
 }
 
 .desktop .element {
@@ -73,8 +73,9 @@
   position: absolute;
   width: 67px;
   height: 64px;
-  top: 4px;
-  left: 62px;
+  top: 0;
+  left: 59px;
+  aspect-ratio: 1.05;
   object-fit: cover;
 }
 
@@ -94,103 +95,104 @@
   height: 50px;
   top: 11px;
   left: 1443px;
+  aspect-ratio: 1;
   position: absolute;
   object-fit: cover;
 }
 /* Original CSS code should be injected here */
 
 /* Additional semantic and accessibility improvements */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.profile-section {
-  position: relative;
-  display: contents;
-}
-
-.profile-content {
-  position: relative;
-  display: contents;
-}
-
-.profile-details {
-  display: contents;
-}
-
-.profile-details dt {
-  display: inline;
-  font-weight: inherit;
-}
-
-.profile-details dd {
-  display: inline;
-  margin: 0;
-}
-
-.profile-details dt::after {
-  content: " ";
-}
-
-.profile-details dd::after {
-  content: "\A";
-  white-space: pre;
-}
-
-.profile-details dd:last-child::after {
-  content: "";
-}
-
-/* Button improvements for accessibility */
-.desktop .pikpng-com-white,
-.desktop .image-2 {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.desktop .pikpng-com-white img,
-.desktop .image-2 img {
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
+  padding: 0 8px;
+}
+
+.pikpng-com-white {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pikpng-com-white img {
+  width: 67px;
+  height: 64px;
+  aspect-ratio: 1.05;
   object-fit: cover;
 }
 
-.desktop .pikpng-com-white:focus,
-.desktop .image-2:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.desktop .pikpng-com-white:hover,
-.desktop .image-2:hover {
+.profile-section {
+  position: absolute;
+  top: 214px;
+  left: 132px;
+  display: flex;
+  gap: 52px;
+  align-items: flex-start;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-heading {
+  margin: 0;
+}
+
+.element p {
+  margin: 0 0 15px 0;
+}
+
+.element p:last-child {
+  margin-bottom: 0;
+}
+
+.element strong {
+  font-weight: 600;
+}
+
+/* Focus styles for accessibility */
+.pikpng-com-white:focus-visible,
+.home-link:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Hover states for interactive elements */
+.pikpng-com-white:hover {
   opacity: 0.8;
   transition: opacity 0.2s ease;
 }
 
-/* Maintain original positioning for buttons */
-.desktop .pikpng-com-white {
-  position: absolute;
-  width: 67px;
-  height: 64px;
-  top: 4px;
-  left: 62px;
+.home-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
-.desktop .image-2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 11px;
-  left: 1443px;
+/* Ensure proper stacking context */
+.rectangle {
+  z-index: 10;
+}
+
+.profile-section {
+  z-index: 5;
+}
+
+.div {
+  z-index: 1;
 }
