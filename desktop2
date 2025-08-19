@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap">
+          <img class="pikpng-com-white" src="img/pikpng-com-white-bars-png-4251166-1.png" />
+          <img class="image" src="img/image-9.png" />
+        </div>
+        <img class="img" src="img/image.png" />
+        <div class="overlap-group">
+          <img class="IMG" src="img/IMG-7851-1.png" />
+          <img class="IMG-2" src="img/IMG-7855-1.png" />
+          <img class="IMG-3" src="img/IMG-4690-1.png" />
+        </div>
+        <div class="text-wrapper">หมวดหมู่ : ภาพยนตร์</div>
+        <div class="text-wrapper-2">
+          เป็นผลงานหนังแรกที่ได้ทำ และรู้สึกชอบในทุกอย่างที่ทำไป ถึงจะไม่ได้สมบูรณ์มาก แต่ก็รู้สึกสนุกและภูมิใจ
+        </div>
+        <p class="p">ผลงาน : หนังสั้นในหัวข้อ “กอดฝัน ปลุกพลังชีวิต”</p>
+        <a href="https://vt.tiktok.com/ZSBpynybx/" target="_blank" rel="noopener noreferrer"
+          ><div class="text-wrapper-3">https://vt.tiktok.com/ZSBpynybx/</div></a
+        >
+        <div class="rectangle"></div>
+      </div>
+    </div>
+  </body>
+</html>
